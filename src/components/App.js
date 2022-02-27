@@ -25,7 +25,7 @@ const App = () => {
   const deleteAllEvents = (e) => {
     e.preventDefault();
 
-    const result = window.confirm("消す？マジ？");
+    const result = window.confirm("消す?マジ?");
 
     if (result) dispatch({ type: "DELETE_ALL_EVENTS" });
   };
