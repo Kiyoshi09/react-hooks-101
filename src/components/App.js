@@ -7,7 +7,11 @@ import AppContext from "../contexts/AppContext";
 import reducer from "../reducers";
 
 const App = () => {
-  const [state, dispatch] = useReducer(reducer, []);
+  const initialState = {
+    events: []
+  };
+
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <AppContext.Provider
